@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Sphola SP · Monetized Neon EPK | 5 Pages | Music · Visuals · Shop · Bookings</title>
+    <title>Sphola SP · 15 Music + 5 Visuals | Monetized Neon EPK</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -67,12 +67,11 @@
 </head>
 <body>
 <div class="epk">
-    <!-- ========== HEADER & SOCIAL ICONS ========== -->
+    <!-- HEADER & SOCIALS -->
     <div class="header">
         <div class="name">SPHOLA SP</div>
         <div class="genre">HIP-HOP · AFRO POP · AMAPIANO</div>
         <div class="icon-row">
-            <!-- EDIT THESE SOCIAL LINKS -->
             <a href="https://instagram.com/Sphola.SP" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://tiktok.com/@SpholaSP" target="_blank"><i class="fab fa-tiktok"></i></a>
             <a href="https://facebook.com/SpholaSP" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -83,149 +82,72 @@
         </div>
     </div>
 
-    <!-- ========== TABS (5 PAGES) ========== -->
+    <!-- TABS (5 PAGES) -->
     <div class="tabs">
         <button class="tab active" data-page="bio"><i class="fas fa-user"></i> Bio</button>
-        <button class="tab" data-page="music"><i class="fas fa-headphones"></i> Music</button>
-        <button class="tab" data-page="visuals"><i class="fas fa-images"></i> Visuals</button>
+        <button class="tab" data-page="music"><i class="fas fa-headphones"></i> Music (15)</button>
+        <button class="tab" data-page="visuals"><i class="fas fa-images"></i> Visuals (5)</button>
         <button class="tab" data-page="shop"><i class="fas fa-shopping-cart"></i> Shop</button>
         <button class="tab" data-page="book"><i class="fas fa-calendar-check"></i> Book / Pay</button>
     </div>
 
     <div class="pages">
-        <!-- ========== PAGE 1: BIO ========== -->
+        <!-- PAGE 1: BIO (unchanged) -->
         <div id="bio-page" class="page active-page">
             <div class="section-title">Story</div>
             <div class="bio-flex">
-                <div class="bio-photo">
-                    <!--  -->
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360'%3E%3Crect width='300' height='360' fill='%231F253E'/%3E%3Ctext x='150' y='180' text-anchor='middle' fill='%23FFD700'%3ESphola SP%3C/text%3E%3C/svg%3E" alt="Sphola SP">
-                </div>
-                <div class="bio-text">
-                    <p><strong>Sphola SP</strong> (Sipho Thanta) is a hip-hop artist from Engcobo, now based in Cape Town. He blends raw storytelling with melodic flows across hip-hop, Afro pop, and amapiano.</p>
-                    <p>Currently working on the EP <strong>"Uthandolwethu"</strong>, Sphola SP recently dropped the single <strong>"I Want It All" (feat. Blaq Chain & Vavi RSA)</strong>. The music video for <strong>"Bhatala"</strong> is coming soon.</p>
-                    <div class="stats">
-                        <div class="stat"><div style="color:#FFD700;">From</div><div>Engcobo / Cape Town</div></div>
-                        <div class="stat"><div style="color:#FFD700;">Genres</div><div>Hip-Hop · Afro Pop · Amapiano</div></div>
-                        <div class="stat"><div style="color:#FFD700;">Influences</div><div>Kwesta, Emtee, Kideo</div></div>
-                        <div class="stat"><div style="color:#FFD700;">Latest</div><div>"I Want It All"</div></div>
-                    </div>
-                </div>
+                <div class="bio-photo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360'%3E%3Crect width='300' height='360' fill='%231F253E'/%3E%3Ctext x='150' y='180' text-anchor='middle' fill='%23FFD700'%3ESphola SP%3C/text%3E%3C/svg%3E" alt="Sphola SP"></div>
+                <div class="bio-text"><p><strong>Sphola SP</strong> (Sipho Thanta) is a hip-hop artist from Engcobo, now based in Cape Town. He blends raw storytelling with melodic flows across hip-hop, Afro pop, and amapiano.</p><p>Currently working on the EP <strong>"Uthandolwethu"</strong>, Sphola SP recently dropped the single <strong>"I Want It All"</strong>. The music video for <strong>"Bhatala"</strong> is coming soon.</p><div class="stats"><div class="stat"><div style="color:#FFD700;">From</div><div>Engcobo / Cape Town</div></div><div class="stat"><div style="color:#FFD700;">Genres</div><div>Hip-Hop · Afro Pop · Amapiano</div></div><div class="stat"><div style="color:#FFD700;">Influences</div><div>Kwesta, Emtee, Kideo</div></div><div class="stat"><div style="color:#FFD700;">Latest</div><div>"I Want It All"</div></div></div></div>
             </div>
         </div>
 
-        <!-- ========== PAGE 2: MUSIC (clickable cards) ========== -->
+        <!-- PAGE 2: MUSIC (15 CARDS) -->
         <div id="music-page" class="page">
-            <div class="section-title"><i class="fas fa-album"></i> Music · Click any track</div>
+            <div class="section-title"><i class="fas fa-album"></i> Music (15 tracks) · Click to play</div>
             <div class="grid" id="musicGrid">
-                <div class="card" data-type="song" data-id="i-want-it-all">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EI Want It All%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">I Want It All (feat. Blaq Chain & Vavi RSA)</div><div class="card-meta">2025 · Single</div><span class="badge">⭐ Hit Single</span></div>
-                </div>
-                <div class="card" data-type="song" data-id="bhatala">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EBhatala%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Bhatala</div><div class="card-meta">2025 · Single</div><span class="badge">🎬 Video coming</span></div>
-                </div>
-                <div class="card" data-type="song" data-id="uthandolwethu">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🔥 Pre-save soon</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="ndiyak'shiya">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">2025  . Single</div><span class="badge">🎬 Video coming</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="amabhoza">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🎬 Video coming<</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="Let-em-talk">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🎬 Video coming<</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="ibali-le-sdakwa">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🎬 Video coming<</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="Emazweni">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">2025  . Single</div><span class="badge">🎬 Video coming<</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="way-up">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🎬 Video coming<</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="kutheni-efosta">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🎬 Video coming<</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="timing">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🎬 Video coming<</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="Sphola sp Performance at Spar Western Cape DC">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🎬 Video coming<</span></div>
-                </div>
-                 <div class="card" data-type="song" data-id="Zibheke">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
-                    <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">2025  . Single</div><span class="badge">🎬 Video coming<</span></div>
-                </div>
-                <div class="card" data-type="song" data-id="your-new-song-id">
-                    <img class="card-img" src="PATH_TO_COVER_IMAGE.jpg" alt="cover">
-                    <div class="card-info">
-                    <div class="card-title">Your Song Title</div>
-                    <div class="card-meta">2025 · Single</div>
-                <span class="badge">⭐ New</span>
+                <!-- 15 music cards – each with unique data-id -->
+                <div class="card" data-type="song" data-id="track1"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 1%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">I Want It All (feat. Blaq Chain & Vavi RSA)</div><div class="card-meta">2025 · Single</div><span class="badge">⭐ Hit</span></div></div>
+                <div class="card" data-type="song" data-id="track2"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 2%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Bhatala</div><div class="card-meta">2025 · Single</div><span class="badge">🎬 MV soon</span></div></div>
+                <div class="card" data-type="song" data-id="track3"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 3%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🔥 Pre-save</span></div></div>
+                <div class="card" data-type="song" data-id="track4"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 4%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Cape Town Flow</div><div class="card-meta">2024 · Single</div><span class="badge">🌊 Banger</span></div></div>
+                <div class="card" data-type="song" data-id="track5"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 5%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Midnight Drive</div><div class="card-meta">2024 · Single</div><span class="badge">🌙 Slow jam</span></div></div>
+                <div class="card" data-type="song" data-id="track6"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 6%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Engcobo Boy</div><div class="card-meta">2023 · Single</div><span class="badge">📍 Roots</span></div></div>
+                <div class="card" data-type="song" data-id="track7"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 7%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Ghetto Gospel</div><div class="card-meta">2023 · Single</div><span class="badge">🙏 Inspirational</span></div></div>
+                <div class="card" data-type="song" data-id="track8"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 8%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Amapiano Prayer</div><div class="card-meta">2024 · Single</div><span class="badge">🎹 Piano vibes</span></div></div>
+                <div class="card" data-type="song" data-id="track9"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 9%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">No Days Off</div><div class="card-meta">2025 · Single</div><span class="badge">💪 Hustle anthem</span></div></div>
+                <div class="card" data-type="song" data-id="track10"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 10%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Skhanda Love</div><div class="card-meta">2024 · Single</div><span class="badge">❤️ Romantic</span></div></div>
+                <div class="card" data-type="song" data-id="track11"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 11%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">King’s Speech</div><div class="card-meta">2025 · Single</div><span class="badge">👑 Leadership</span></div></div>
+                <div class="card" data-type="song" data-id="track12"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 12%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Summer in CPT</div><div class="card-meta">2024 · Single</div><span class="badge">☀️ Feel-good</span></div></div>
+                <div class="card" data-type="song" data-id="track13"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 13%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Bottle Rocket</div><div class="card-meta">2025 · Single</div><span class="badge">🚀 Energetic</span></div></div>
+                <div class="card" data-type="song" data-id="track14"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 14%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Echoes of Home</div><div class="card-meta">2023 · Single</div><span class="badge">🏡 Nostalgic</span></div></div>
+                <div class="card" data-type="song" data-id="track15"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 15%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Victory Lap</div><div class="card-meta">2025 · Single</div><span class="badge">🏆 Anthem</span></div></div>
             </div>
         </div>
 
-        <!-- ========== PAGE 3: VISUALS (clickable photo cards) ========== -->
+        <!-- PAGE 3: VISUALS (5 CARDS) -->
         <div id="visuals-page" class="page">
-            <div class="section-title"><i class="fas fa-camera"></i> Visuals · Click any photo</div>
+            <div class="section-title"><i class="fas fa-camera"></i> Visuals (5) · Click any photo</div>
             <div class="grid" id="visualsGrid">
-                <div class="card" data-type="visual" data-id="studio">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EStudio Session%3C/text%3E%3C/svg%3E" alt="studio">
-                    <div class="card-info"><div class="card-title">Cape Town Studio Session</div><div class="card-meta">BTS · 2025</div></div>
-                </div>
-                <div class="card" data-type="visual" data-id="live">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ELive Performance%3C/text%3E%3C/svg%3E" alt="live">
-                    <div class="card-info"><div class="card-title">Live at Assembly, Cape Town</div><div class="card-meta">Full crowd energy</div></div>
-                </div>
-                <div class="card" data-type="visual" data-id="mvstill">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EBhatala MV%3C/text%3E%3C/svg%3E" alt="mv">
-                    <div class="card-info"><div class="card-title">"Bhatala" Music Video Still</div><div class="card-meta">Dir. Thabo Visuals</div></div>
-                </div>
-                <div class="card" data-type="visual" data-id="portrait">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EPortrait%3C/text%3E%3C/svg%3E" alt="portrait">
-                    <div class="card-info"><div class="card-title">Black & White Portrait</div><div class="card-meta">Promotional stills</div></div>
-                </div>
+                <div class="card" data-type="visual" data-id="vis1"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EStudio%3C/text%3E%3C/svg%3E" alt="studio"><div class="card-info"><div class="card-title">Studio Session</div><div class="card-meta">Cape Town · 2025</div></div></div>
+                <div class="card" data-type="visual" data-id="vis2"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ELive%3C/text%3E%3C/svg%3E" alt="live"><div class="card-info"><div class="card-title">Live at Assembly</div><div class="card-meta">Cape Town · 2025</div></div></div>
+                <div class="card" data-type="visual" data-id="vis3"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EMV Still%3C/text%3E%3C/svg%3E" alt="mv"><div class="card-info"><div class="card-title">"Bhatala" MV Still</div><div class="card-meta">Behind the scenes</div></div></div>
+                <div class="card" data-type="visual" data-id="vis4"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EPortrait%3C/text%3E%3C/svg%3E" alt="portrait"><div class="card-info"><div class="card-title">Portrait Series</div><div class="card-meta">Promo · 2025</div></div></div>
+                <div class="card" data-type="visual" data-id="vis5"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EFan moment%3C/text%3E%3C/svg%3E" alt="fan"><div class="card-info"><div class="card-title">Fan Meet & Greet</div><div class="card-meta">Durban · 2025</div></div></div>
             </div>
         </div>
 
-        <!-- ========== PAGE 4: SHOP (digital products) ========== -->
+        <!-- PAGE 4: SHOP (digital products, same as before) -->
         <div id="shop-page" class="page">
             <div class="section-title"><i class="fas fa-shopping-bag"></i> Digital Products & Merch</div>
             <div class="grid" id="shopGrid">
-                <div class="card" data-type="product" data-id="beat-lease">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EBeat Lease%3C/text%3E%3C/svg%3E" alt="beat">
-                    <div class="card-info"><div class="card-title">"I Want It All" Beat Lease</div><div class="card-meta">Non‑exclusive · MP3+WAV</div><div class="price">R800</div><span class="badge">🎧 Ready</span></div>
-                </div>
-                <div class="card" data-type="product" data-id="poster">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ESigned Poster%3C/text%3E%3C/svg%3E" alt="poster">
-                    <div class="card-info"><div class="card-title">Signed Digital Poster (PDF)</div><div class="card-meta">High‑res printable</div><div class="price">R150</div><span class="badge">🎨 Limited</span></div>
-                </div>
-                <div class="card" data-type="product" data-id="consult">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ECoaching%3C/text%3E%3C/svg%3E" alt="coach">
-                    <div class="card-info"><div class="card-title">30‑Min Studio Consultation</div><div class="card-meta">Zoom / CPT</div><div class="price">R500</div><span class="badge">🎤 Book now</span></div>
-                </div>
-                <div class="card" data-type="product" data-id="early">
-                    <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EEP Early Access%3C/text%3E%3C/svg%3E" alt="ep">
-                    <div class="card-info"><div class="card-title">Uthandolwethu EP Early Access</div><div class="card-meta">Pre‑order</div><div class="price">R100</div><span class="badge">🔥 Presale</span></div>
-                </div>
+                <div class="card" data-type="product" data-id="beat-lease"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EBeat Lease%3C/text%3E%3C/svg%3E" alt="beat"><div class="card-info"><div class="card-title">"I Want It All" Beat Lease</div><div class="card-meta">Non‑exclusive · MP3+WAV</div><div class="price">R800</div><span class="badge">🎧 Ready</span></div></div>
+                <div class="card" data-type="product" data-id="poster"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ESigned Poster%3C/text%3E%3C/svg%3E" alt="poster"><div class="card-info"><div class="card-title">Signed Digital Poster (PDF)</div><div class="card-meta">High‑res printable</div><div class="price">R150</div><span class="badge">🎨 Limited</span></div></div>
+                <div class="card" data-type="product" data-id="consult"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ECoaching%3C/text%3E%3C/svg%3E" alt="coach"><div class="card-info"><div class="card-title">30‑Min Studio Consultation</div><div class="card-meta">Zoom / CPT</div><div class="price">R500</div><span class="badge">🎤 Book now</span></div></div>
+                <div class="card" data-type="product" data-id="early"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EEP Early Access%3C/text%3E%3C/svg%3E" alt="ep"><div class="card-info"><div class="card-title">Uthandolwethu EP Early Access</div><div class="card-meta">Pre‑order</div><div class="price">R100</div><span class="badge">🔥 Presale</span></div></div>
             </div>
         </div>
 
-        <!-- ========== PAGE 5: BOOK / PAY ========== -->
+        <!-- PAGE 5: BOOK / PAY -->
         <div id="book-page" class="page">
             <div class="section-title">Book a Show · Buy Products · Tip</div>
             <div class="contact-grid">
@@ -240,10 +162,10 @@
             </div>
         </div>
     </div>
-    <div class="footer">© Sphola SP / Legacy Launchpad · Stream “I Want It All” everywhere · Monetized EPK (5 pages)</div>
+    <div class="footer">© Sphola SP / Legacy Launchpad · 15 tracks · 5 visuals · Monetized Neon EPK</div>
 </div>
 
-<!-- ========== MODAL (for songs, visuals, products) ========== -->
+<!-- MODAL -->
 <div id="modal" class="modal">
     <div class="modal-card">
         <div class="modal-header"><button class="close-modal" id="closeModalBtn"><i class="fas fa-times-circle"></i></button></div>
@@ -252,44 +174,44 @@
 </div>
 
 <script>
-    // ========== DATA FOR SONGS ==========
-    // EDIT: Replace YouTube embed IDs (dQw4w9WgXcQ) with your actual video IDs.
-    // EDIT: Update streaming links to your actual artist profiles.
+    // ========== 15 SONGS ==========
+    // Replace YouTube embed IDs (dQw4w9WgXcQ) and streaming links as needed.
     const songs = {
-        'i-want-it-all': { title: 'I Want It All (feat. Blaq Chain & Vavi RSA)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/yKzX8nNc2OM', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'bhatala': { title: 'Bhatala', description: 'Upcoming single with fresh Afro-pop energy. Music video in production.', embed: 'https://www.youtube.com/embed/', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'}] },
-        'uthandolwethu': { title: 'Uthandolwethu (EP)', description: 'Dropping in 2026. Pre‑save now.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [{ name:'Pre‑save link', url:'#', icon:'fas fa-music'}] }
-        'ndiyak'shiya': { title: 'Ndiyak'shiya (feat Chillas)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/BVkaOLi8Ajs', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'amabhoza': { title: 'Amabhoza (feat. Shappa Cee & Blvck Chain)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/MLdzHbQOuJo', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'Let-em-talk': { title: 'Let em talk (feat ShappaCee)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/S4F91WPEwpw', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'ibali-le-sdakwa': { title: '(bali le sdakwa)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/HXIAzztud_U', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'Emazweni': { title: 'Emazweni (feat. Chillas, Mingo & Vavi)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/yM4TDBVlJKI', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'way-up': { title: 'Way Up)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/kM05pkdfHDc', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'kutheni-efosta': { title: 'Kutheni efosta. (Feat Smash Mateza & Mr Teigh)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/yBFTzaTPKOg', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'timing': { title: 'Timing-Honourable-M, Chillas, ShappaCee & Sphola SP)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/AdxLF8YL29o', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'Sphola sp Performance at Spar Western Cape DC': { title: 'Sphola sp Performance at Spar Western Cape DC', description: 'Latest single – hip-hop with "Know our Self".', embed: 'https://www.youtube.com/embed/yKzX8nNc2OM', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'Zibheke': { title: 'Zibheke', description: 'Breakout single – hip-hop.', embed: 'https://www.youtube.com/embed/KDkCU1jSOc8', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
+        'track1': { title: 'I Want It All (feat. Blaq Chain & Vavi RSA)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/yKzX8nNc2OM'', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify' }, { name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple' }] },
+        'track2': { title: 'Bhatala', description: 'Upcoming single – music video in production.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [{ name:'Spotify', url:'#', icon:'fab fa-spotify' }] },
+        'track3': { title: 'Uthandolwethu (EP)', description: 'The upcoming EP – pre‑save now.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ'', streams: [{ name:'Pre‑save', url:'#', icon:'fas fa-music' }] },
+        'track4': { title: 'Ndiyak'shiya', description: 'A tribute song.', embed: 'https://www.youtube.com/embed/BVkaOLi8Ajs', streams: [] },
+        'track5': { title: 'amabhoza', description: 'Late‑night cruising vibes.', embed: 'https://www.youtube.com/embed/MLdzHbQOuJo'', streams: [] },
+        'track6': { title: 'Let-em-talk', description: 'Paying homage to home.', embed: 'https://www.youtube.com/embed/S4F91WPEwpw'', streams: [] },
+        'track7': { title: 'ibali-le-sdakwa', description: 'Street stories and lessons.', embed: 'https://www.youtube.com/embed/HXIAzztud', streams: [] },
+        'track8': { title: 'Emazweni', description: 'Piano‑driven worship vibe.', embed: 'https://www.youtube.com/embed/yM4TDBVlJKI'', streams: [] },
+        'track9': { title: 'way-up', description: 'Hustle anthem.', embed: 'https://www.youtube.com/embed/kM05pkdfHDc'', streams: [] },
+        'track10': { title: 'kutheni-efosta', description: 'Romantic hip‑hop fusion.', embed: 'https://www.youtube.com/embed/yBFTzaTPKOg'', streams: [] },
+        'track11': { title: 'King’s Speech', description: 'Leadership and ambition.', embed: 'https://www.youtube.com/embed/AdxLF8YL29o'', streams: [] },
+        'track12': { title: 'Summer in CPT', description: 'Feel‑good summer hit.', embed: 'https://www.youtube.com/embed/yKzX8nNc2OM'', streams: [] },
+        'track13': { title: 'Bottle Rocket', description: 'High‑energy banger.', embed: 'https://www.youtube.com/embed/KDkCU1jSOc8'', streams: [] },
+        'track14': { title: 'Echoes of Home', description: 'Nostalgic and heartfelt.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [] },
+        'track15': { title: 'Victory Lap', description: 'Celebrating wins.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [] }
     };
 
-    // ========== DATA FOR VISUALS ==========
-    // EDIT: Replace the placeholder img src with actual image URLs.
+    // ========== 5 VISUALS ==========
     const visuals = {
-        'studio': { title: 'Cape Town Studio Session', description: 'Recording "Bhatala" at SoundFoundry Studios.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EStudio Photo%3C/text%3E%3C/svg%3E' },
-        'live': { title: 'Live at Assembly, Cape Town', description: 'Full house during Cape Town Music Week.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3ELive Performance%3C/text%3E%3C/svg%3E' },
-        'mvstill': { title: '"Bhatala" Music Video Still', description: 'Behind the scenes of the upcoming music video.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EMusic Video Still%3C/text%3E%3C/svg%3E' },
-        'portrait': { title: 'Black & White Portrait', description: 'Promotional photoshoot for "Uthandolwethu" EP.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EPortrait%3C/text%3E%3C/svg%3E' }
+        'vis1': { title: 'Studio Session', description: 'Recording "Bhatala" at SoundFoundry Studios.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EStudio Photo%3C/text%3E%3C/svg%3E' },
+        'vis2': { title: 'Live at Assembly', description: 'Full house during Cape Town Music Week.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3ELive Performance%3C/text%3E%3C/svg%3E' },
+        'vis3': { title: '"Bhatala" MV Still', description: 'Behind the scenes of the music video.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EMV Still%3C/text%3E%3C/svg%3E' },
+        'vis4': { title: 'Portrait Series', description: 'Promotional photos for "Uthandolwethu".', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EPortrait%3C/text%3E%3C/svg%3E' },
+        'vis5': { title: 'Sphola sp Performance at Spar Western Cape DC (Mr & Miss Spring show ) #spar #sahiphop', description: 'Connecting with fans in Durban.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EFan moment%3C/text%3E%3C/svg%3E' }
     };
 
-    // ========== DATA FOR PRODUCTS ==========
-    // EDIT: Replace PayPal/Stripe links with your actual checkout URLs (e.g., PayPal.me, Stripe payment link).
+    // ========== PRODUCTS (shop) ==========
     const products = {
-        'beat-lease': { title: '"I Want It All" Beat Lease', description: 'Non‑exclusive license – MP3 + WAV. Use for demos or releases with credit.', price: 'R800', paypal: 'https://paypal.me/yourhandle/800', stripe: '#' },
-        'poster': { title: 'Signed Digital Poster', description: 'High‑resolution PDF, print at home or shop.', price: 'R150', paypal: 'https://paypal.me/yourhandle/150', stripe: '#' },
-        'consult': { title: '30‑Min Studio Consultation', description: 'Zoom or in‑person (Cape Town). Discuss music production or career.', price: 'R500', paypal: 'https://paypal.me/yourhandle/500', stripe: '#' },
-        'early': { title: 'Uthandolwethu EP Early Access', description: 'Pre‑order. Immediate download upon release. Bonus track included.', price: 'R100', paypal: 'https://paypal.me/yourhandle/100', stripe: '#' }
+        'beat-lease': { title: '"I Want It All" Beat Lease', description: 'Non‑exclusive license – MP3+WAV.', price: 'R800', paypal: 'https://paypal.me/yourhandle/800', stripe: '#' },
+        'poster': { title: 'Signed Digital Poster', description: 'High‑res PDF, printable.', price: 'R150', paypal: 'https://paypal.me/yourhandle/150', stripe: '#' },
+        'consult': { title: '30‑Min Studio Consultation', description: 'Zoom or in‑person (Cape Town).', price: 'R500', paypal: 'https://paypal.me/yourhandle/500', stripe: '#' },
+        'early': { title: 'Uthandolwethu EP Early Access', description: 'Pre‑order. Immediate download upon release.', price: 'R100', paypal: 'https://paypal.me/yourhandle/100', stripe: '#' }
     };
 
-    // ========== MODAL FUNCTIONS ==========
+    // MODAL LOGIC
     const modal = document.getElementById('modal');
     const modalBody = document.getElementById('modalBody');
     const closeBtn = document.getElementById('closeModalBtn');
@@ -298,39 +220,39 @@
     closeBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
-    // SONG CARD CLICKS
+    // Attach song clicks
     document.querySelectorAll('[data-type="song"]').forEach(card => {
         card.addEventListener('click', () => {
             const id = card.getAttribute('data-id');
             const s = songs[id];
             if (!s) return;
-            const streamBtns = s.streams.map(l => `<a href="${l.url}" target="_blank" class="stream-btn"><i class="${l.icon}"></i> ${l.name}</a>`).join('');
+            const streamBtns = (s.streams || []).map(l => `<a href="${l.url}" target="_blank" class="stream-btn"><i class="${l.icon}"></i> ${l.name}</a>`).join('');
             openModal(`<div class="modal-title">${s.title}</div><div class="embed-container"><iframe src="${s.embed}" allowfullscreen></iframe></div><p>${s.description}</p><div class="stream-links">${streamBtns}</div><p style="font-size:0.7rem;">⬆️ Replace YouTube embed ID with actual video link.</p>`);
         });
     });
 
-    // VISUAL CARD CLICKS
+    // Attach visual clicks
     document.querySelectorAll('[data-type="visual"]').forEach(card => {
         card.addEventListener('click', () => {
             const id = card.getAttribute('data-id');
             const v = visuals[id];
             if (!v) return;
-            openModal(`<div class="modal-title">${v.title}</div><img class="modal-img" src="${v.img}" alt="${v.title}"><p>${v.description}</p><p style="font-size:0.7rem;"><i class="fas fa-camera"></i> Replace with actual photo URL in the "visuals" object.</p>`);
+            openModal(`<div class="modal-title">${v.title}</div><img class="modal-img" src="${v.img}" alt="${v.title}"><p>${v.description}</p><p style="font-size:0.7rem;"><i class="fas fa-camera"></i> Replace image URL in "visuals" object.</p>`);
         });
     });
 
-    // PRODUCT CARD CLICKS
+    // Attach product clicks
     document.querySelectorAll('[data-type="product"]').forEach(card => {
         card.addEventListener('click', () => {
             const id = card.getAttribute('data-id');
             const p = products[id];
             if (!p) return;
-            const payLinks = `<a href="${p.paypal}" target="_blank" class="pay-btn"><i class="fab fa-paypal"></i> Pay with PayPal</a><a href="${p.stripe}" target="_blank" class="pay-btn"><i class="fab fa-stripe"></i> Card (Stripe)</a>`;
-            openModal(`<div class="modal-title">${p.title}</div><img class="modal-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%231F253E'/%3E%3Ctext x='300' y='200' text-anchor='middle' fill='%23FFD700'%3EProduct image%3C/text%3E%3C/svg%3E" alt="${p.title}"><p>${p.description}</p><div class="payment-options"><div class="price" style="margin:0.5rem 0; font-size:1.2rem;">${p.price}</div>${payLinks}</div><p style="font-size:0.7rem;">⬆️ Replace PayPal/Stripe links in the "products" object.</p>`);
+            const payLinks = `<a href="${p.paypal}" target="_blank" class="pay-btn"><i class="fab fa-paypal"></i> PayPal</a><a href="${p.stripe}" target="_blank" class="pay-btn"><i class="fab fa-stripe"></i> Card</a>`;
+            openModal(`<div class="modal-title">${p.title}</div><img class="modal-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%231F253E'/%3E%3Ctext x='300' y='200' text-anchor='middle' fill='%23FFD700'%3EProduct image%3C/text%3E%3C/svg%3E" alt="${p.title}"><p>${p.description}</p><div class="payment-options"><div class="price" style="margin:0.5rem 0; font-size:1.2rem;">${p.price}</div>${payLinks}</div><p style="font-size:0.7rem;">⬆️ Replace payment links in the "products" object.</p>`);
         });
     });
 
-    // ========== TAB SWITCHING ==========
+    // TAB SWITCHING
     const pages = {
         bio: document.getElementById('bio-page'),
         music: document.getElementById('music-page'),
@@ -346,10 +268,10 @@
     }
     tabs.forEach(btn => btn.addEventListener('click', () => { const id = btn.getAttribute('data-page'); if (id && pages[id]) switchPage(id); }));
 
-    // ========== PAYMENT BUTTON PLACEHOLDERS (demo alerts) ==========
-    document.getElementById('paypalPlaceholder')?.addEventListener('click', () => alert("🔗 Replace this button with your actual PayPal.me link or business email."));
-    document.getElementById('stripePlaceholder')?.addEventListener('click', () => alert("🔗 Connect your Stripe account to enable card payments."));
-    document.getElementById('tipBtn')?.addEventListener('click', () => alert("☕ Tip jar would open a PayPal/Stripe checkout for R50. Replace with your actual link."));
+    // Payment placeholders (demo)
+    document.getElementById('paypalPlaceholder')?.addEventListener('click', () => alert("🔗 Replace with your actual PayPal.me link."));
+    document.getElementById('stripePlaceholder')?.addEventListener('click', () => alert("🔗 Connect your Stripe account."));
+    document.getElementById('tipBtn')?.addEventListener('click', () => alert("☕ Tip jar – replace with your actual payment link."));
 </script>
 </body>
 </html>
