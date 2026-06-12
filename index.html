@@ -98,7 +98,7 @@
             <div class="section-title">Story</div>
             <div class="bio-flex">
                 <div class="bio-photo">
-                    i-want-it-all-cover.jpg.jpg
+                    <!--  -->
                     <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360'%3E%3Crect width='300' height='360' fill='%231F253E'/%3E%3Ctext x='150' y='180' text-anchor='middle' fill='%23FFD700'%3ESphola SP%3C/text%3E%3C/svg%3E" alt="Sphola SP">
                 </div>
                 <div class="bio-text">
@@ -130,6 +130,12 @@
                     <img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3EUthandolwethu%3C/text%3E%3C/svg%3E" alt="cover">
                     <div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🔥 Pre-save soon</span></div>
                 </div>
+                <div class="card" data-type="song" data-id="your-new-song-id">
+                    <img class="card-img" src="PATH_TO_COVER_IMAGE.jpg" alt="cover">
+                    <div class="card-info">
+                    <div class="card-title">Your Song Title</div>
+                    <div class="card-meta">2025 · Single</div>
+                <span class="badge">⭐ New</span>
             </div>
         </div>
 
@@ -194,7 +200,7 @@
             </div>
         </div>
     </div>
-    <div class="footer">© Sphola SP / Desinged and Managed by Legacy Launchpad Pty Ltd · Stream “I Want It All” everywhere · Monetized EPK (5 pages)</div>
+    <div class="footer">© Sphola SP / Legacy Launchpad · Stream “I Want It All” everywhere · Monetized EPK (5 pages)</div>
 </div>
 
 <!-- ========== MODAL (for songs, visuals, products) ========== -->
@@ -207,18 +213,11 @@
 
 <script>
     // ========== DATA FOR SONGS ==========
-    /https://www.youtube.com/watch?v=yKzX8nNc2OM
-    /https://www.youtube.com/watch?v=_inRdfApiE8
-    /https://www.youtube.com/watch?v=_inRdfApiE8
-    //https://www.youtube.com/watch?v=yM4TDBVlJKI
-    //https://www.youtube.com/watch?v=HXIAzztud_U
-    //https://www.youtube.com/watch?v=HXIAzztud_U
-    //http://youtube.com/watch?v=yBFTzaTPKOg
-    //https://www.youtube.com/watch?v=kM05pkdfHDc
-    //https://www.youtube.com/watch?v=BxwCOWY5hrs
+    // EDIT: Replace YouTube embed IDs (dQw4w9WgXcQ) with your actual video IDs.
+    // EDIT: Update streaming links to your actual artist profiles.
     const songs = {
-        'i-want-it-all': { title: 'I Want It All (feat. Blaq Chain & Vavi RSA)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
-        'bhatala': { title: 'Bhatala', description: 'Upcoming single with fresh Afro-pop energy. Music video in production.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'}] },
+        'i-want-it-all': { title: 'I Want It All (feat. Blaq Chain & Vavi RSA)', description: 'Breakout single – hip-hop with amapiano undertones.', embed: 'https://www.youtube.com/embed/yKzX8nNc2OM', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'},{ name:'YouTube', url:'https://youtube.com/@spholasp', icon:'fab fa-youtube'}] },
+        'bhatala': { title: 'Bhatala', description: 'Upcoming single with fresh Afro-pop energy. Music video in production.', embed: 'https://www.youtube.com/embed/', streams: [{ name:'Spotify', url:'https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k', icon:'fab fa-spotify'},{ name:'Apple Music', url:'https://music.apple.com/za/artist/sphola-sp/1756274300', icon:'fab fa-apple'}] },
         'uthandolwethu': { title: 'Uthandolwethu (EP)', description: 'Dropping in 2026. Pre‑save now.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [{ name:'Pre‑save link', url:'#', icon:'fas fa-music'}] }
     };
 
