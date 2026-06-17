@@ -92,7 +92,7 @@
     </div>
 
     <div class="pages">
-        <!-- PAGE 1: BIO (unchanged) -->
+        <!-- PAGE 1: BIO -->
         <div id="bio-page" class="page active-page">
             <div class="section-title">Story</div>
             <div class="bio-flex">
@@ -105,7 +105,6 @@
         <div id="music-page" class="page">
             <div class="section-title"><i class="fas fa-album"></i> Music (15 tracks) · Click to play</div>
             <div class="grid" id="musicGrid">
-                <!-- 15 music cards – each with unique data-id -->
                 <div class="card" data-type="song" data-id="track1"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 1%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">I Want It All (feat. Blaq Chain & Vavi RSA)</div><div class="card-meta">2025 · Single</div><span class="badge">⭐ Hit</span></div></div>
                 <div class="card" data-type="song" data-id="track2"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 2%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Bhatala</div><div class="card-meta">2025 · Single</div><span class="badge">🎬 MV soon</span></div></div>
                 <div class="card" data-type="song" data-id="track3"><img class="card-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 180'%3E%3Crect width='400' height='180' fill='%231F253E'/%3E%3Ctext x='200' y='95' text-anchor='middle' fill='%23FFD700'%3ETrack 3%3C/text%3E%3C/svg%3E" alt="cover"><div class="card-info"><div class="card-title">Uthandolwethu (EP)</div><div class="card-meta">Upcoming 2026</div><span class="badge">🔥 Pre-save</span></div></div>
@@ -189,10 +188,9 @@
         'track10': { title: 'kutheni-efosta', description: 'Romantic hip‑hop fusion.', embed: 'https://www.youtube.com/embed/yBFTzaTPKOg'', streams: [] },
         'track11': { title: 'King’s Speech', description: 'Leadership and ambition.', embed: 'https://www.youtube.com/embed/AdxLF8YL29o'', streams: [] },
         'track12': { title: 'Summer in CPT', description: 'Feel‑good summer hit.', embed: 'https://www.youtube.com/embed/yKzX8nNc2OM'', streams: [] },
-        'track13': { title: 'Bottle Rocket', description: 'High‑energy banger.', embed: 'https://www.youtube.com/embed/KDkCU1jSOc8'', streams: [] },
-        'track14': { title: 'Echoes of Home', description: 'Nostalgic and heartfelt.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [] },
-        'track15': { title: 'Victory Lap', description: 'Celebrating wins.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [] }
+         'track15': { title: 'Victory Lap', description: 'Celebrating wins.', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ', streams: [] }
     };
+
 
     // ========== 5 VISUALS ==========
     const visuals = {
@@ -200,7 +198,7 @@
         'vis2': { title: 'Live at Assembly', description: 'Full house during Cape Town Music Week.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3ELive Performance%3C/text%3E%3C/svg%3E' },
         'vis3': { title: '"Bhatala" MV Still', description: 'Behind the scenes of the music video.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EMV Still%3C/text%3E%3C/svg%3E' },
         'vis4': { title: 'Portrait Series', description: 'Promotional photos for "Uthandolwethu".', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EPortrait%3C/text%3E%3C/svg%3E' },
-        'vis5': { title: 'Sphola sp Performance at Spar Western Cape DC (Mr & Miss Spring show ) #spar #sahiphop', description: 'Connecting with fans in Durban.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EFan moment%3C/text%3E%3C/svg%3E' }
+        'vis5': { title: 'Fan Meet & Greet', description: 'Connecting with fans in Durban.', img: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%231F253E"/%3E%3Ctext x="300" y="200" text-anchor="middle" fill="%23FFD700"%3EFan moment%3C/text%3E%3C/svg%3E' }
     };
 
     // ========== PRODUCTS (shop) ==========
@@ -211,14 +209,14 @@
         'early': { title: 'Uthandolwethu EP Early Access', description: 'Pre‑order. Immediate download upon release.', price: 'R100', paypal: 'https://paypal.me/yourhandle/100', stripe: '#' }
     };
 
-    // MODAL LOGIC
+    // ========== MODAL ==========
     const modal = document.getElementById('modal');
     const modalBody = document.getElementById('modalBody');
     const closeBtn = document.getElementById('closeModalBtn');
     function openModal(html) { modalBody.innerHTML = html; modal.classList.add('active'); document.body.style.overflow = 'hidden'; }
     function closeModal() { modal.classList.remove('active'); document.body.style.overflow = ''; }
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
     // Attach song clicks
     document.querySelectorAll('[data-type="song"]').forEach(card => {
@@ -252,26 +250,47 @@
         });
     });
 
-    // TAB SWITCHING
-    const pages = {
+    // ========== TAB SWITCHING (FIXED) ==========
+    const allPages = {
         bio: document.getElementById('bio-page'),
         music: document.getElementById('music-page'),
         visuals: document.getElementById('visuals-page'),
         shop: document.getElementById('shop-page'),
         book: document.getElementById('book-page')
     };
-    const tabs = document.querySelectorAll('.tab');
-    function switchPage(id) {
-        Object.values(pages).forEach(p => p?.classList.remove('active-page'));
-        if (pages[id]) pages[id].classList.add('active-page');
-        tabs.forEach(btn => { if (btn.getAttribute('data-page') === id) btn.classList.add('active'); else btn.classList.remove('active'); });
+    const tabButtons = document.querySelectorAll('.tab');
+    function switchPage(pageId) {
+        // Hide all pages
+        Object.values(allPages).forEach(page => {
+            if (page) page.classList.remove('active-page');
+        });
+        // Show selected page
+        if (allPages[pageId]) allPages[pageId].classList.add('active-page');
+        // Update tab active class
+        tabButtons.forEach(btn => {
+            if (btn.getAttribute('data-page') === pageId) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
     }
-    tabs.forEach(btn => btn.addEventListener('click', () => { const id = btn.getAttribute('data-page'); if (id && pages[id]) switchPage(id); }));
+    // Add click event listeners to each tab button
+    tabButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const pageId = btn.getAttribute('data-page');
+            if (pageId && allPages[pageId]) switchPage(pageId);
+        });
+    });
 
-    // Payment placeholders (demo)
-    document.getElementById('paypalPlaceholder')?.addEventListener('click', () => alert("🔗 Replace with your actual PayPal.me link."));
-    document.getElementById('stripePlaceholder')?.addEventListener('click', () => alert("🔗 Connect your Stripe account."));
-    document.getElementById('tipBtn')?.addEventListener('click', () => alert("☕ Tip jar – replace with your actual payment link."));
+    // Payment placeholders (demo alerts)
+    const paypalBtn = document.getElementById('paypalPlaceholder');
+    const stripeBtn = document.getElementById('stripePlaceholder');
+    const tipBtn = document.getElementById('tipBtn');
+    if (paypalBtn) paypalBtn.addEventListener('click', () => alert("🔗 Replace with your actual PayPal.me link."));
+    if (stripeBtn) stripeBtn.addEventListener('click', () => alert("🔗 Connect your Stripe account."));
+    if (tipBtn) tipBtn.addEventListener('click', () => alert("☕ Tip jar – replace with your actual payment link."));
 </script>
 </body>
 </html>
+
