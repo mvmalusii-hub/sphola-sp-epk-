@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Sphola SP · Bio · Neon EPK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0A0C14; font-family: 'Inter', sans-serif; color: #EFF1F9; line-height: 1.5; padding: 1.5rem; }
+        .epk { max-width: 1280px; margin: 0 auto; background: #0F111A; border-radius: 2rem; box-shadow: 0 25px 45px -12px rgba(255,215,0,0.15); overflow: hidden; border: 1px solid rgba(255,215,0,0.3); }
+        .header { background: linear-gradient(145deg, #0A0A1A, #1A1030); padding: 2rem 2rem 1rem; text-align: center; border-bottom: 2px solid #FFD700; }
+        .name { font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, #FFD700, #FF007F, #00FFFF); background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .genre { font-size: 0.85rem; color: #C0C0C0; letter-spacing: 3px; margin-top: 0.2rem; }
+        .icon-row { display: flex; justify-content: center; gap: 1.2rem; margin: 1rem 0 0.5rem; }
+        .icon-row a { color: #A0A0C0; font-size: 1.3rem; transition: 0.2s; }
+        .icon-row a:hover { color: #FFD700; transform: translateY(-2px); text-shadow: 0 0 6px #FFD700; }
+        .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem; padding: 0.8rem 1rem; background: #0F111A; border-bottom: 1px solid rgba(255,215,0,0.3); }
+        .nav-link { background: transparent; border: none; padding: 0.6rem 1.6rem; font-weight: 600; font-size: 0.85rem; border-radius: 60px; cursor: pointer; color: #B0B0D0; text-decoration: none; transition: 0.2s; }
+        .nav-link i { margin-right: 6px; }
+        .nav-link.active { background: linear-gradient(95deg, #FFD700, #FF007F); color: #0A0C14; box-shadow: 0 0 12px rgba(255,215,0,0.6); }
+        .nav-link:hover:not(.active) { background: #2A2F45; color: #FFF; }
+        .pages-container { padding: 2rem; }
+        .section-title { font-size: 1.6rem; font-weight: 700; border-left: 4px solid #FFD700; padding-left: 1rem; margin-bottom: 1.5rem; color: #FFE6B3; text-shadow: 0 0 2px #FFD700; }
+        .bio-flex { display: flex; gap: 2rem; flex-wrap: wrap; }
+        .bio-photo { flex: 0 0 220px; position: relative; }
+        .bio-photo img { width: 100%; border-radius: 1.5rem; border: 2px solid #FFD700; box-shadow: 0 0 15px rgba(255,215,0,0.3); }
+        .bio-photo .upload-overlay { position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; color: #FFD700; font-size: 0.9rem; cursor: pointer; border: 1px solid #FFD700; transition: 0.2s; }
+        .bio-photo .upload-overlay:hover { background: #FFD700; color: #0A0C14; }
+        .bio-text { flex: 1; background: rgba(26,30,48,0.6); backdrop-filter: blur(4px); padding: 1.2rem; border-radius: 1.5rem; border: 1px solid rgba(255,215,0,0.3); }
+        .stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 1rem; margin-top: 1rem; }
+        .stat { background: rgba(0,0,0,0.3); padding: 0.5rem; border-radius: 1rem; border-left: 3px solid #FFD700; }
+        .footer { text-align: center; padding: 1rem; font-size: 0.7rem; border-top: 1px solid rgba(255,215,0,0.2); color: #8F8FB0; }
+        .password-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; display: flex; align-items: center; justify-content: center; visibility: hidden; opacity: 0; transition: 0.2s; }
+        .password-modal.active { visibility: visible; opacity: 1; }
+        .password-box { background: #0F111A; border: 1px solid #FFD700; border-radius: 1.5rem; padding: 2rem; max-width: 400px; width: 90%; text-align: center; }
+        .password-box input { width: 100%; padding: 0.8rem; border-radius: 60px; border: 1px solid #FFD700; background: transparent; color: #fff; font-size: 1rem; margin: 1rem 0; }
+        .password-box input:focus { outline: none; border-color: #FF007F; }
+        .password-box .btn-gold { margin-top: 0.5rem; }
+        .btn-gold { background: linear-gradient(95deg, #FFD700, #FF007F); color: #0A0C14; padding: 0.5rem 1.2rem; border-radius: 60px; text-decoration: none; font-weight: 700; display: inline-block; margin-top: 0.8rem; transition: 0.2s; border: none; cursor: pointer; }
+        .btn-gold:hover { transform: scale(1.02); box-shadow: 0 0 12px #FFD700; }
+        @media (max-width: 700px) { .pages-container { padding: 1.2rem; } .name { font-size: 2rem; } .bio-flex { flex-direction: column; align-items: center; text-align: center; } .stats { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<div class="epk">
+    <!-- Lock Toggle -->
+    <div class="lock-toggle locked" id="lockToggle" style="position:absolute;top:1rem;right:1rem;background:rgba(0,0,0,0.5);border:1px solid #FFD700;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:#FFD700;cursor:pointer;z-index:10;transition:0.2s;font-size:1.2rem;"><i class="fas fa-lock"></i></div>
+
+    <!-- Password Modal -->
+    <div class="password-modal" id="passwordModal">
+        <div class="password-box">
+            <h3 style="color:#FFD700;">🔒 Enter Password to Unlock</h3>
+            <p style="font-size:0.8rem; color:#B0B0D0;">Enter the EPK password to enable image uploads.</p>
+            <input type="password" id="passwordInput" placeholder="Enter password...">
+            <button class="btn-gold" id="unlockBtn">Unlock</button>
+            <button class="btn-gold" style="background:transparent; color:#888; margin-top:0.5rem;" id="cancelLockBtn">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="name">SPHOLA SP</div>
+        <div class="genre">HIP-HOP · AFRO POP · AMAPIANO</div>
+        <div class="icon-row">
+            <a href="https://instagram.com/Sphola.SP" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@SpholaSP" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com/SpholaSP" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@spholasp" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k" target="_blank"><i class="fab fa-spotify"></i></a>
+            <a href="https://music.apple.com/za/artist/sphola-sp/1756274300" target="_blank"><i class="fab fa-apple"></i></a>
+            <a href="mailto:siphoespeethanta@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+        <a href="index.html" class="nav-link active"><i class="fas fa-user"></i> Bio</a>
+        <a href="music.html" class="nav-link"><i class="fas fa-headphones"></i> Music</a>
+        <a href="visuals.html" class="nav-link"><i class="fas fa-images"></i> Visuals</a>
+        <a href="shop.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Shop</a>
+        <a href="book.html" class="nav-link"><i class="fas fa-calendar-check"></i> Book / Pay</a>
+    </div>
+
+    <div class="pages-container">
+        <div class="section-title">Story</div>
+        <div class="bio-flex">
+            <div class="bio-photo">
+                <img id="bioImage" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360'%3E%3Crect width='300' height='360' fill='%231F253E'/%3E%3Ctext x='150' y='180' text-anchor='middle' fill='%23FFD700'%3ESphola SP%3C/text%3E%3C/svg%3E" alt="Sphola SP">
+                <div class="upload-overlay" data-target="bioImage" title="Upload profile photo"><i class="fas fa-camera"></i></div>
+                <input type="file" class="image-input" accept="image/jpeg,image/png" style="display:none;">
+            </div>
+            <div class="bio-text">
+                <p><strong>Sphola SP</strong> (Sipho Thanta) is a hip-hop artist from Engcobo, now based in Cape Town. He blends raw storytelling with melodic flows across hip-hop, Afro pop, and amapiano.</p>
+                <p>Currently working on the EP <strong>"Uthandolwethu"</strong>, Sphola SP recently dropped the single <strong>"I Want It All" (feat. Blaq Chain & Vavi RSA)</strong>. The music video for <strong>"Bhatala"</strong> is coming soon.</p>
+                <div class="stats">
+                    <div class="stat"><div style="color:#FFD700;">From</div><div>Engcobo / Cape Town</div></div>
+                    <div class="stat"><div style="color:#FFD700;">Genres</div><div>Hip-Hop · Afro Pop · Amapiano</div></div>
+                    <div class="stat"><div style="color:#FFD700;">Influences</div><div>Kwesta, Emtee, Kideo</div></div>
+                    <div class="stat"><div style="color:#FFD700;">Latest</div><div>"I Want It All"</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">© Sphola SP · Legacy Launchpad · Neon EPK</div>
+</div>
+
+<script>
+    // ========== PASSWORD LOCK SYSTEM ==========
+    const PASSWORD = 'epk2026';
+    const lockToggle = document.getElementById('lockToggle');
+    const passwordModal = document.getElementById('passwordModal');
+    const passwordInput = document.getElementById('passwordInput');
+    const unlockBtn = document.getElementById('unlockBtn');
+    const cancelLockBtn = document.getElementById('cancelLockBtn');
+    let isUnlocked = false;
+
+    function checkLockStatus() {
+        const saved = localStorage.getItem('epk_unlocked');
+        if (saved === 'true') {
+            isUnlocked = true;
+            lockToggle.classList.remove('locked');
+            lockToggle.innerHTML = '<i class="fas fa-unlock"></i>';
+        } else {
+            isUnlocked = false;
+            lockToggle.classList.add('locked');
+            lockToggle.innerHTML = '<i class="fas fa-lock"></i>';
+        }
+    }
+
+    function lockEPK() {
+        localStorage.setItem('epk_unlocked', 'false');
+        isUnlocked = false;
+        lockToggle.classList.add('locked');
+        lockToggle.innerHTML = '<i class="fas fa-lock"></i>';
+    }
+
+    function unlockEPK() {
+        localStorage.setItem('epk_unlocked', 'true');
+        isUnlocked = true;
+        lockToggle.classList.remove('locked');
+        lockToggle.innerHTML = '<i class="fas fa-unlock"></i>';
+        passwordModal.classList.remove('active');
+    }
+
+    lockToggle.addEventListener('click', () => {
+        if (isUnlocked) { lockEPK(); }
+        else { passwordModal.classList.add('active'); passwordInput.value = ''; passwordInput.focus(); }
+    });
+
+    unlockBtn.addEventListener('click', () => {
+        if (passwordInput.value === PASSWORD) { unlockEPK(); }
+        else { alert('Incorrect password. Try again.'); passwordInput.value = ''; passwordInput.focus(); }
+    });
+
+    cancelLockBtn.addEventListener('click', () => { passwordModal.classList.remove('active'); });
+    passwordInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') unlockBtn.click(); });
+    passwordModal.addEventListener('click', (e) => { if (e.target === passwordModal) passwordModal.classList.remove('active'); });
+    checkLockStatus();
+
+    // ========== IMAGE UPLOAD ==========
+    const bioUploadIcon = document.querySelector('.bio-photo .upload-overlay');
+    const bioFileInput = document.querySelector('.bio-photo .image-input');
+    const bioImg = document.getElementById('bioImage');
+
+    function handleUpload(fileInput, imgElement, storageKey) {
+        const file = fileInput.files[0];
+        if (!file) return;
+        if (!isUnlocked) { alert('🔒 EPK is locked. Click the lock icon and enter the password to upload images.'); fileInput.value = ''; return; }
+        if (file.type === 'image/jpeg' || file.type === 'image/png') {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const dataUrl = e.target.result;
+                localStorage.setItem(storageKey, dataUrl);
+                imgElement.src = dataUrl;
+                alert('✅ Image updated successfully!');
+            };
+            reader.readAsDataURL(file);
+        } else { alert('Please select a JPG or PNG image.'); }
+        fileInput.value = '';
+    }
+
+    bioUploadIcon.addEventListener('click', () => {
+        if (!isUnlocked) { alert('🔒 EPK is locked. Click the lock icon and enter the password to upload images.'); return; }
+        bioFileInput.click();
+    });
+    bioFileInput.addEventListener('change', () => handleUpload(bioFileInput, bioImg, 'sphola_bio_photo'));
+
+    const savedBio = localStorage.getItem('sphola_bio_photo');
+    if (savedBio && savedBio.startsWith('data:image')) bioImg.src = savedBio;
+</script>
+</body>
+</html>
