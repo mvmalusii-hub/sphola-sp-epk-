@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Sphola SP · Book / Pay · Neon EPK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0A0C14; font-family: 'Inter', sans-serif; color: #EFF1F9; line-height: 1.5; padding: 1.5rem; }
+        .epk { max-width: 1280px; margin: 0 auto; background: #0F111A; border-radius: 2rem; box-shadow: 0 25px 45px -12px rgba(255,215,0,0.15); overflow: hidden; border: 1px solid rgba(255,215,0,0.3); }
+        .header { background: linear-gradient(145deg, #0A0A1A, #1A1030); padding: 2rem 2rem 1rem; text-align: center; border-bottom: 2px solid #FFD700; }
+        .name { font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, #FFD700, #FF007F, #00FFFF); background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .genre { font-size: 0.85rem; color: #C0C0C0; letter-spacing: 3px; margin-top: 0.2rem; }
+        .icon-row { display: flex; justify-content: center; gap: 1.2rem; margin: 1rem 0 0.5rem; }
+        .icon-row a { color: #A0A0C0; font-size: 1.3rem; transition: 0.2s; }
+        .icon-row a:hover { color: #FFD700; transform: translateY(-2px); text-shadow: 0 0 6px #FFD700; }
+        .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem; padding: 0.8rem 1rem; background: #0F111A; border-bottom: 1px solid rgba(255,215,0,0.3); }
+        .nav-link { background: transparent; border: none; padding: 0.6rem 1.6rem; font-weight: 600; font-size: 0.85rem; border-radius: 60px; cursor: pointer; color: #B0B0D0; text-decoration: none; transition: 0.2s; }
+        .nav-link i { margin-right: 6px; }
+        .nav-link.active { background: linear-gradient(95deg, #FFD700, #FF007F); color: #0A0C14; box-shadow: 0 0 12px rgba(255,215,0,0.6); }
+        .nav-link:hover:not(.active) { background: #2A2F45; color: #FFF; }
+        .pages-container { padding: 2rem; }
+        .section-title { font-size: 1.6rem; font-weight: 700; border-left: 4px solid #FFD700; padding-left: 1rem; margin-bottom: 1.5rem; color: #FFE6B3; text-shadow: 0 0 2px #FFD700; }
+        .contact-grid { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem; }
+        .contact-card { flex: 1; background: rgba(26,30,48,0.7); border-radius: 1.5rem; padding: 1.5rem; text-align: center; border: 1px solid rgba(255,215,0,0.4); transition: 0.2s; }
+        .contact-card:hover { border-color: #FFD700; transform: translateY(-3px); }
+        .contact-icon { font-size: 2rem; color: #FFD700; margin-bottom: 0.5rem; }
+        .btn-gold { background: linear-gradient(95deg, #FFD700, #FF007F); color: #0A0C14; padding: 0.5rem 1.2rem; border-radius: 60px; text-decoration: none; font-weight: 700; display: inline-block; margin-top: 0.8rem; transition: 0.2s; border: none; cursor: pointer; }
+        .btn-gold:hover { transform: scale(1.02); box-shadow: 0 0 12px #FFD700; }
+        .payment-options { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin: 1rem 0; }
+        .pay-btn { background: #2A2F45; padding: 0.4rem 1rem; border-radius: 60px; text-decoration: none; color: #FFD700; font-size: 0.75rem; font-weight: 600; transition: 0.2s; display: inline-flex; align-items: center; gap: 6px; border: 1px solid #FFD700; cursor: pointer; }
+        .pay-btn:hover { background: #FFD700; color: #0A0C14; box-shadow: 0 0 8px #FFD700; }
+        .upgrade-block { background: linear-gradient(135deg, #FFD70011, #FF007F11); border: 1px solid #FFD700; border-radius: 1.5rem; padding: 1.2rem; margin: 1.5rem 0; text-align: center; }
+        .footer { text-align: center; padding: 1rem; font-size: 0.7rem; border-top: 1px solid rgba(255,215,0,0.2); color: #8F8FB0; }
+        @media (max-width: 700px) { .pages-container { padding: 1.2rem; } .name { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+<div class="epk">
+    <div class="header">
+        <div class="name">SPHOLA SP</div>
+        <div class="genre">HIP-HOP · AFRO POP · AMAPIANO</div>
+        <div class="icon-row">
+            <a href="https://instagram.com/Sphola.SP" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@SpholaSP" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com/SpholaSP" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@spholasp" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/77JBBB8bGUUfuteqTRMP3k" target="_blank"><i class="fab fa-spotify"></i></a>
+            <a href="https://music.apple.com/za/artist/sphola-sp/1756274300" target="_blank"><i class="fab fa-apple"></i></a>
+            <a href="mailto:siphoespeethanta@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html" class="nav-link"><i class="fas fa-user"></i> Bio</a>
+        <a href="music.html" class="nav-link"><i class="fas fa-headphones"></i> Music</a>
+        <a href="visuals.html" class="nav-link"><i class="fas fa-images"></i> Visuals</a>
+        <a href="shop.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Shop</a>
+        <a href="book.html" class="nav-link active"><i class="fas fa-calendar-check"></i> Book / Pay</a>
+    </div>
+
+    <div class="pages-container">
+        <div class="section-title">Book a Show · Buy Products · Tip</div>
+        <div class="contact-grid">
+            <div class="contact-card"><div class="contact-icon"><i class="fas fa-calendar-alt"></i></div><h3>Live Booking</h3><p>siphoespeethanta@gmail.com</p><a href="mailto:siphoespeethanta@gmail.com" class="btn-gold">Send inquiry</a></div>
+            <div class="contact-card"><div class="contact-icon"><i class="fab fa-paypal"></i></div><h3>PayPal / Card</h3><div class="payment-options"><button class="pay-btn" id="paypalPlaceholder"><i class="fab fa-paypal"></i> PayPal</button><button class="pay-btn" id="stripePlaceholder"><i class="fab fa-stripe"></i> Card</button></div><button class="btn-gold" id="tipBtn"><i class="fas fa-coffee"></i> Tip R50</button></div>
+            <div class="contact-card"><div class="contact-icon"><i class="fas fa-headset"></i></div><h3>Management</h3><p>Legacy Launchpad<br>mv.malusii@gmail.com<br>+27 72 152 3293</p></div>
+        </div>
+        <div class="upgrade-block">
+            <h3 style="color:#FFD700;"><i class="fas fa-chart-line"></i> Upgrade to Full Sales Machine</h3>
+            <p>Automated booking calendar, members‑only content, live checkout: <strong>R2000 one‑time + R1500/year</strong>. Basic EPK remains <strong>R1000</strong>.</p>
+            <p>📩 <strong>Upgrade now:</strong> mv.malusii@gmail.com | WhatsApp 063 301 7269 | Call 072 152 3293</p>
+        </div>
+    </div>
+    <div class="footer">© Sphola SP · Legacy Launchpad · Neon EPK</div>
+</div>
+
+<script>
+    document.getElementById('paypalPlaceholder')?.addEventListener('click', () => alert("🔗 Replace with your actual PayPal.me link."));
+    document.getElementById('stripePlaceholder')?.addEventListener('click', () => alert("🔗 Connect your Stripe account."));
+    document.getElementById('tipBtn')?.addEventListener('click', () => alert("☕ Tip jar – replace with your actual payment link."));
+</script>
+</body>
+</html>
